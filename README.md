@@ -1,6 +1,6 @@
 # arPanel
 arPanel is a mobile friendly web dashboard for Arweave pool mining using virdpool's miner.  
-You can use this dashboard to control and monitor your miner's status and performance.
+Use this dashboard to control and monitor your miner's status and performance.
 
 # Installation
 Follow these simple steps below.
