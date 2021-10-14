@@ -1,13 +1,13 @@
 # arPanel
-arPanel is a mobile friendly web dashboard for Arweave pool mining using virdpool's miner.  
+arPanel is a mobile friendly web dashboard for Arweave pool mining using Virdpool miner.  
 Use this dashboard to control and monitor your miner's status and performance.
 
 # Installation
 
 ### Requirements
-arPanel is **not** a standalone miner, it is simply a dashboard for Vird's miner which is available here: [Virdpool Miner](https://github.com/virdpool/miner)  
+arPanel is **not** a standalone miner, it is simply a dashboard for Virdpool miner which is available here: [Virdpool Miner](https://github.com/virdpool/miner)  
 Follow the instructions to install the [miner](https://github.com/virdpool/miner) first. Then, follow the instructions below to setup arPanel.  
-arPanel has been tested on Ubuntu 18.04 and Ubuntu 20.x
+arPanel has been tested on Ubuntu 18.04 and Ubuntu 20.04.
 
 ### Setup
 IMPORTANT: Clone the arPanel repository inside your miner's directory.  
@@ -46,6 +46,25 @@ Start arPanel.
 ./arpanel-start.sh
 ```
 Start your miner using arPanel.
+
+### Troubleshooting
+##### nvm and ownership fix [(source)](https://github.com/virdpool/miner#nvm-and-ownership-fix)
+The Virdpool miner installation script may cause some ownership issues with `nvm`. Here is a fix.  
+Move to the Virdpool miner installation directory and do:
+```
+# change 'user' to your own username
+sudo chown -R user .
+
+# install nvm under the current user because nvm under root will not work
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bashrc
+source ~/.nvm/nvm.sh
+nvm i 14
+nvm alias default 14
+npm i -g iced-coffee-script
+rm -rf node_modules
+npm ci
+```
 
 ### FAQ
 Q: Is arPanel free to use?  
