@@ -30,6 +30,14 @@ You can change the port number in `./arpanel-start.sh`
 
 Stop arPanel with: `./arpanel-stop.sh`
 
+### Update arPanel
+You can easily update arPanel. Move to the arPanel installation directory and do:
+```
+./arpanel-stop.sh
+git pull
+./arpanel-start.sh
+```
+
 # License
 Copyright (c) 2021 arpanel
 
