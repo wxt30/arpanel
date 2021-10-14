@@ -3,7 +3,6 @@ arPanel is a mobile friendly web dashboard for Arweave pool mining using virdpoo
 Use this dashboard to control and monitor your miner's status and performance.
 
 # Installation
-Follow these simple steps below.
 
 ### Requirements
 arPanel is **not** a standalone miner, it is simply a dashboard for Vird's miner which is available here: [Virdpool Miner](https://github.com/virdpool/miner)  
@@ -12,7 +11,7 @@ arPanel has been tested on Ubuntu 18.04 and Ubuntu 20.x
 
 ### Setup
 IMPORTANT: Clone the arPanel repository inside your miner's directory.  
-1) Move to the directory where the miner is installed and do:  
+1) Move to the directory where virdpool miner is installed and do:  
 ```
 git clone https://github.com/wxt30/arpanel.git
 cd arpanel
@@ -21,7 +20,7 @@ cd arpanel
 
 3) Optionally you can set your arweave data directory using the `data_dir` option. You need this if you have previously synced. And finally, do some performance tuning for better mining hashrate speeds. See the notes in `mine.sh` for tuning details.
 
-### Starting & Stopping arPanel
+### Start & Stop arPanel
 Start arPanel with: `./arpanel-start.sh`  
 
 Open a web browser to see your dashboard: `http://your-rigs-ip:3030`  
@@ -31,15 +30,23 @@ You can change the port number in `./arpanel-start.sh`
 Stop arPanel with: `./arpanel-stop.sh`
 
 ### Update arPanel
-You can easily update arPanel. Move to the arPanel installation directory and do:
+NOTE: Backup `mine.sh` first so you don't lose your miner settings.  
+
+Move to the arPanel installation directory and do:
 ```
 ./arpanel-stop.sh
 git pull
+```
+Edit `mine.sh` to set your mining WALLET and startup options.  
+Edit `arpanel-start.sh` to set your custom port, if needed.  
+
+Start arPanel.
+```
 ./arpanel-start.sh
 ```
 
 # License
-Copyright (c) 2021 arpanel
+Copyright (c) 2021 arPanel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
