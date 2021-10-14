@@ -1,0 +1,136 @@
+Launching Erlang Virtual Machine...
+Exec: /home/service/virdpool/arweave/_build/prod/rel/arweave/erts-11.2/bin/erlexec -noinput +Bd -boot /home/service/virdpool/arweave/_build/prod/rel/arweave/releases/2.4.2.0/start -mode embedded -boot_var SYSTEM_LIB_DIR /home/service/virdpool/arweave/_build/prod/rel/arweave/lib -config /home/service/virdpool/arweave/_build/prod/rel/arweave/releases/2.4.2.0/sys.config -args_file /home/service/virdpool/arweave/_build/prod/rel/arweave/releases/2.4.2.0/vm.args -- foreground +Ktrue +A20 +SDio20 +sbwtvery_long +sbwtdcpuvery_long +sbwtdiovery_long +swtvery_low +swtdcpuvery_low +swtdiovery_low +Bi -run ar main port 1984 pool_mine internal_api_secret YDljVJ8g2OKtwxNgDQy7iNzZFk data_dir /home/service/arweave-data peer 65.21.33.240:1984 peer 39.173.177.122:1984 peer 117.148.168.232:1984 peer 157.90.92.225:1984 peer 157.90.92.240:1984 peer 161.97.87.18:1984 peer 157.90.92.241:1984 peer 157.90.92.234:1984 peer 135.181.142.202:1984 peer 157.90.92.244:1984 peer 157.90.92.227:1984 peer 157.90.92.245:1984 peer 157.90.92.230:1984 peer 157.90.90.245:1984 peer 157.90.92.232:1984 peer 157.90.92.228:1984 peer 157.90.93.177:1984 enable randomx_jit enable randomx_large_pages enable randomx_hardware_aes stage_one_hashing_threads 7 stage_two_hashing_threads 2 io_threads 4 randomx_bulk_hashing_iterations 20
+Root: /home/service/virdpool/arweave/_build/prod/rel/arweave
+/home/service/virdpool/arweave/_build/prod/rel/arweave
+=INFO REPORT==== 11-Oct-2021::07:15:43.594933 ===
+    alarm_handler: {set,{{disk_almost_full,"/"},[]}}
+
+	Peer 161.97.87.18:1984 is not available.
+
+
+	Peer 117.148.168.232:1984 is not available.
+
+
+	Peer 39.173.177.122:1984 is not available.
+
+Joining the Arweave network...
+Downloading block index from 157.90.92.230:1984.
+Downloaded block index successfully.
+Downloading joining block t4X1okZwcrZqFshDOoE51pktX1ZOiN5izpWx1Ng8wmjNR6yu51ppoZUysXUJqKtR.
+Initialising RandomX dataset for fast hashing. Swap height: 786000, Key: <<"_____63pr9zOW5We1ltvsfuubDB_-HoTLLcG-XrACzI">>. The process may take several minutes.
+RandomX dataset initialisation for swap height 786000 complete.
+Downloading the block trail.
+Downloading joining block nLjKsWgS_X3GujS2QGwMKCEWTla9LwTke74Z2z_zcACh7et7SKXQOM-St6AQshYF.
+Downloading joining block C-yifUuf9hyrqSaAWVVOkvkWD5WVj8dYXebrxE5CGTNIvX0BFrQKoDy3S0FiK_2m.
+Downloading joining block Q5J-1NsE17tDmecQ0Cjc9Q8SeNSvjcpIAfKstdStQCBveVnyRrS7cIS01Fgbi13v.
+Downloading joining block QcF590taJ7LGDoMWRmI4FNQJZPtopGOWn-YfZRDfp1j4YSWoFCz6kwxWVrgxRkkJ.
+Downloading joining block -g7AL5oJd1xWNTqbIkpwPjf3-o0EtISjhc9GaJei0PtI06RjQjTV_y45xgJpPjtr.
+Downloading joining block 83ldlQoSs3JP48jSdJlNHPpHiURY_YbAW3dGIlcTpDj71sCl4Tf8qVtbvK1bpbzR.
+Downloading joining block QITDCmvjeCggWjbHqUArkhFjTZ6zZw62M3SYVyjmsb5Ai0GvKJ7YrIdtU7d8sl7b.
+Downloading joining block lPrrN4LRtDxqkZ29wreY5RT7bZQLJL5WkTMMkVF1fUJsRtYBsO2zCXD6ahMTx9RT.
+Downloading joining block qUOv7tZaci5jsy7KJAlZ9nMjkHoC8hKI0jMLJZnGFNxbgdY_97ywQgiP8dx4e-rh.
+Downloading joining block 9fKf25DJXCco6KFgjWXqWftx1NaA9ALcfDmjuKAWdWaJUG_PLSQORih1UYO3HnR-.
+Downloading joining block RccKt0FombY7kfU8KjPn0GfHVISYoEA0uhVfbuIbOqnF1McEFL4M74cB-rk19Zsi.
+Downloading joining block fJOfjeqGGgoSRnLaTgEPOoQbhM0NP0RXmrJHup-VZ-eMm6guPb8mKGMUb9OhPTkx.
+Downloading joining block R9YbCX_DDPcGFBMyEZwhdiFFgPsENk7zM6Xoz93ksRXBfdAsmAozTfcXKjIVrQN0.
+Downloading joining block oueEcY5_2vFxVyEKsxlnqJ9I27GPWt0pAcXKeyq7Xne6LjXkCAhoYzY_5xoChl28.
+Downloading joining block qTqqIaxQR_PgfvK5c3rkeRz2_SxKCUSmBED8f4oTwbOp1x2K9zFSraozC7wNX9Rf.
+Downloading joining block iZH8fOeDoGxOw0LXlCPSDkRhZuDTHz6giSbqM5YqaUfqBlx5kU8timrF4x661-At.
+Downloading joining block JyRNppTNRi5yw4ClEvzgh6VuPi4cEBOdrF1wpFXiCJz-EB-IG_tmV-FrwFwnzg0P.
+Downloading joining block mnl2LohKA7yIrG9K36GaGcC2JqiwCnZZPhY6YPRGcdlcW9SmcSr-WIQ6GhYHBLLo.
+Downloading joining block XQUQfACyGBqvpR7AzX1XqQlbVcTHX7Lp94tc7xHo2M2nIYQvaJRcqOR68LbsUCL4.
+Downloading joining block OCXDbTbyiJgggy-Rv8smEoNc06JFVFCwJrxb_I6r_mMIQFHJRJWrU98UD3RFCXKR.
+Downloading joining block WH65Jxup9Tsowiouvnw5Tss2OT1EcJPlVk5ip-4BoXZSFRDLzo0Dk1uOIbrvqfvr.
+Downloading joining block eq6zOupsvTCp_kUCwctBGk794NPxRIc4d9NxTYPDDrrgw0Bsq3-FOCLOHbH7D0iE.
+Downloading joining block MifeL2w8URtUFlDuuq0NrbL-ATel7VHs5ffMZjONZGXU4Q83aXVeBbBJ7YHYiuGN.
+Downloading joining block 0S8TKwmLwut-Q1z4keKCsVhpPz_YUd-ykaHt4LRrqu2P9jD5Y1-iezJYQt2X5oTh.
+Downloading joining block pRF6ddovIAQYeuYeWpKEsM65FEJh7h23q2WVS8CHMBYxJVHm7lLZUobP6K0PaC0q.
+Downloading joining block 6gZfcZ3qiF36k5u_w1BaLZG0BRTnyklNFLWsAqUhS2d_hiSV9DoZ5vXiFf7sMgRD.
+Downloading joining block SrqdWc92S79zzZuv3My4IzywhMCZs2ENz1Jrs3hqrBRnHzFJbceWU2RmoQmHLyKp.
+Downloading joining block UD8qearvAP8IYBSLPe3rfAjqwddt2Y-MT_7PZjWvafERzZTyRwWcQ6gs545KvtDf.
+Downloading joining block 5buKVH5BEhI3K73J77gpfAbdl0yVAV33ZMz2-KqmcrhfqwLi_lkb2_AeiYJ3ECsR.
+Downloading joining block QjJ5pdAim7YFlN0Mr2gXSfCVcj0PnMoQEOPL_Iej9S7q9I-5zPEb0N3keh6dZW4e.
+Downloading joining block 60_afqCi1zTO1VV5KwEHj5xILKwaKNddOeMyuPcg0LJQ6PR2Zw3Jm3Lkwye57Vj7.
+Downloading joining block LAD3xOHYqCusYuBIdO2zg68UfzWwMjLzqFdKQCZ6Rh18MJNjuoiKLKytJAgLBgay.
+Downloading joining block Je9wa-xidJgSp7AS4UHyM7p-hRpjf9lDVKkFX6R48iK3DdgNemy6CPXm0C58Kn18.
+Downloading joining block wsuD9Fo0iMnWTuokZWC6SOqqRz2DR8sGc7GwQBGRxP7gZ9lDL9uvpOI9ur9HY_G0.
+Downloading joining block Xjmf1OFVcnVrlZaEMdQ9nbgF7qgZF-akFuqzKoVRcKzQIJ5UjKpjqQrWazdf4xY0.
+Downloading joining block 4qngOD8iuC6RbxBhdrsC3D86hQGxDovBoooyqA5pvh4ohwFQnL2k1aiUNyE0f-0l.
+Downloading joining block saxawukZ6hXYBan9Lc7pRMq5Itg34xNLXPlzMm70JchGF53FEVXS4A6fA5-nOrKv.
+Downloading joining block 74tKASkwskoJ1KuHjJ-N6t0ry1Sr_IAmruBwUMIWWXQXqwGIoOcUx9yQKfnMiRyc.
+Downloading joining block Xe3MtO_3tNkwbMsuTAt54Z5Ac1CfUAUQIg85ngLLMvC5uvYB-C2hCZb7oHnxu2WV.
+Downloading joining block 4loIEisfRo8M2sN8snfdC2dMSxxwKXMGhRtkwWybpqPVl4IeQA1Z2PJorvbfsvNy.
+Downloading joining block 8brlZ1N5Qe1edG2UIkSZ4MXrGwoG0pD2noM0B8PoF1Fz7LQpexjfwe4l9adggP59.
+Downloading joining block 2GYpDi2u3rwH1jUSXxkFOuCV_4cHHPbw06Mk6-hjKEVAm1wSky1dOAUTgyI5ntyz.
+Downloading joining block ubovxzkBWAY69wvbzpYR8-2v8xjQ8KpwFwiwpk-AKFtYxt7CAf-qrkhaC17H6Yl-.
+Downloading joining block -fJd-2MT68UKoln1R35GxlAH3FzcQyrHfAOfMlxuCmE1J_qgrBWVkdxkei0PHDql.
+Downloading joining block w7_qDNkl1LstGoaEEGODkokKesWQW5d-kdS-DiGNl6Vk8Vi0g7-LCYX12pDbXih3.
+Downloading joining block 0LWatQHZDOCw9szOqdkHtpwdWjqbLoQigC1wZkhgVAKRChPws0i76NaVvZc51u6U.
+Downloading joining block CnUbJDZ3Kdb3Gf-Agt5AfnH12hzYZAmhvmtZv-Qj4Iv0-1CkEojAZ2poz47tG3M4.
+Downloading joining block X_jYrMo5NOnaIui7YZLKOWlh7JUdm7j5Bwjt4z8oK456sLkGFcU4N46v5YnNzy1a.
+Downloading joining block Zq7dD6DR6suRfg6sEP1XnjtQsjvxvk5O5iSp-xhxwk6_cEoPozK3bQngxTAaJISj.
+Downloading joining block 1XD4K5zui83tRwM0eTC7BizaVOWJYH_KBaaHD3JWqj-jBqe1QCTy_EVsENT8v2lS.
+Downloading joining block 8Azz-utHVtmhqdSE838NuRC7Ka4BZ0WNgf_6JbVJFlBzH9o3i-kX3quuFzjbNwl2.
+Downloading joining block 9GHUs1aPssqqaw6Fjg8cwP3-8hNtZXqy_WZurkHz3K-gbxy3_tO2mJreK19IoIPZ.
+Downloading joining block 2ksl4aQXtQ6zH8fPtTpe-rtpqsETk4wKgEt9rj0LR3MSulRJ8oH9TPyrp6ojLaI5.
+Downloading joining block RAslFB6WG-HM41NBUM3XFkIXicYmqP3aclMWO4EEMGmlKr7zVphrn-UGGbkUTQ9P.
+Downloading joining block tNxaF6OlityTVPyIl11E0wVZMJJracUT8KR79f2ki5RzbIx3YBRAdT2QQePE7hHK.
+Downloading joining block SeR6RsxEnXf3qWBaPEkrCvI202ztFMF_cKS2vFFvR1HMRhSsiIAvndJEx_1IOkSa.
+Downloading joining block JWWljaA82Z_vkWhGv2yw5RU0ZI91kWtH22-60NpDp76R2aeig1G4qkARDrsEwDlX.
+Downloading joining block AYOR9yVcVUKBFzfEmO-4zap85fKj7Rp-5JtAC9DFwz6HDuyZCpZeVlOx4i374qUD.
+Downloading joining block 7W8oMSFaftPDc5uyR6-PEJJY6dDXnl0ISp3SbdQ7Ve5ieePbbO_f2zrMkU0QBbTd.
+Downloading joining block iGZ1znRu8jGoJPk1lKrLcpOSTuDuDVfEvZ8CRSAU3IWizUs1i89lwMKhHW9QFCfc.
+Downloading joining block XLpASzNtZ9FDw1iEHltgJGkRPgmWUJklT9Ve788vqePn8g2gihYRBBkqxRlbUHvo.
+Downloading joining block qEW159rsfn1XWTcmQLRkj4-Dxwy3rwU96JJq391LBUCGrogcHUdwgc0-aQ9METSi.
+Downloading joining block iaV6v9gM_MR-cx6LsKznEuNvXfRdV1wfCGJcwlTgM5ZYTcARoClKvOk0O0f-t_f3.
+Downloading joining block HNjIlJmGtTqSkTOSOa9UG07q61QkkHrkocx4Y9gm7VQcckbtH-eRy3ZBFFXvZxRq.
+Downloading joining block TyGQ6gxv4jUb9bRWHcCB7igbPCIOtRYM58-cye47qODHwwShrTYziwy2vgvv9LNT.
+Downloading joining block wAy-LRF61EYw8hhACFUwZ_ZtZ1fAVG2fbcCLeWocW2COkHhttmw917KqCZd9UD_K.
+Downloading joining block _ayMxFFC1aupAZb0vV-um7mUskMFZaFAg73Rlk4daO3pPvV_lURqKTxt6n_WDDDz.
+Downloading joining block seE8_m9RWP0tGVRn2z4PLXqpiStkkrN9CtAQHBbRVam7AjiKRh9iYr1eqwsrlrU2.
+Downloading joining block sUspXEqwi3ugFsLbbmkyfW32Ns3hfiovZ3T-t79hlzt4JhGuPq47OMbOZhoRK9R4.
+Downloading joining block 2Tb3VdhZyVs-NQkWxrqj27_ghsQY5pOAeYLaqm67vH19OOO5CjTQPPcSFNTePeSb.
+Downloading joining block umdqz3BC2n4iy-DuCCuip0TH1q8Shm0s4pjSQNkW-BvlDdRf_iFCiMMQOZrOvh5i.
+Downloading joining block 6NHPL0Se_zjNkuXabI8B6_9KURDZ0qy46kPJQ3_lFY0hdW-KQ6x7BJeJf4eXOtLf.
+Downloading joining block fWc7Pa8DSUgdWHKQ2ZgMv8CaXBCVS7oWOCa7FnitucTJk0skDlrU7ODbMDcXxVef.
+Downloading joining block 0jXVH8-UZP6eHqoe7QVfKc_BPKhicoL5VzX2HILftBmUeg7gV1XxgotwSgEDXVhR.
+Downloading joining block QxjxDCEcif3iPG7k5xb5x-BoF8ObzEIiA8WBrU-b9QhdtkCVy0d4Rl6t_m5hjNs7.
+Downloading joining block Cr8Vkdn7s5trWMskPQYCZcH4VxDW6PxsArOiPiGEAb-AkXT52Qg6IPaKX-7wHajm.
+Downloading joining block kthYMKzdpacEd0GS0-wvOBednlKAE2bC3gM5Q5Rx7NmAVFkIhpas1uRHee-Mx6kQ.
+Downloading joining block wD-ex_Wn113MWsr_JoO6guNSEvlfllOKXKkwmjE9fhdNx30IWUl6wNHnp7ZRoN6b.
+Downloading joining block hrJXBvLvI_yCKUBBsEiIOf_12BwxH2Eu4Y3jQYMEdXWGn6RLYviG_YTRR7cyo-4f.
+Downloading joining block yeW1WwREDAVTXz8eQezVTfn1dWmipqRkeeX14_sKVcfjw_6fW34iQzAJX14nkxIN.
+Downloading joining block X2NLDsrQHmfneZy0CYSmaQsZE1EDfL0KwpNpWKz8EcB-qeM-wp9o5riFAneHHVKV.
+Downloading joining block uZgn3UKgcaTYxfOsuHTwQYnJ4DYXOdcIjhdK910JVwgktyjPiFDqacT3E1sIPNQh.
+Downloading joining block gmnwdhfFkpbM_XOnEqp3-kcg-0eCmxBuLmDZ6VizjE3xPIxJQ7d-FyZx9dTaeVme.
+Downloading joining block hclmBP-Ua7xKajqJS6HujExNrjP-c-R6LDnaRm_SRTPqBygrYcVZAxCkxHbsCDUM.
+Downloading joining block tHGeK8vR6e8e0qGgY-GVK_Bmi7pyKN9pqkzPvPWp-eg53v_LHeEhbvOmNATACDXu.
+Downloading joining block b8XcCbK0gzBD2SpM8Cooagn33uH9UPptGUOQkuCwMiVQpefDpk4KSHOp2u12llgz.
+Downloading joining block c6EfS3YOcwZOxL_CTP1jBOyHBGUQsb31UOI5cGIA492_VY9hlai11mu6d0UxdwlN.
+Downloading joining block loqxWKLL9fZ8xu99xqZLS7kuU8HqxzGUowDcvK9jGlaX3eQwvbzXibTh3d255LYx.
+Downloading joining block xDnNYH3P3vUyf9amlA4h56UYOk_2HfPChEe3LB7L3vm2mzDbZGmDh_ugctM_OBEi.
+Downloading joining block _seUr8BvrvNnAJ94Rt_MXZBP2L-ukeXcMWhjA-gT1gjb0li57DFh_z6FfEbBpWN3.
+Downloading joining block 2h4u_6hjO1n-AHGTpOpdwbWPTE761vo-9wEEIWER7YkH15-1-d16Rw-Ck108GPU_.
+Downloading joining block aGsFl6dwnaxD6vHY6CXSndjSnam1maDncMXJ7wEA6tuzZ5YDiofVOoice3zjzqBV.
+Downloading joining block b9R1M75G-ZGFSuxEE9TWObGVY_Ox4sT-ApTnESV6iz-Sa2vAGyYkAqQxKAcNYUKs.
+Downloading joining block 9QPW3-QSDCfG9IyQXVjAY61fYZz--uT-e19gC806J13GqXi-UURvJQqJ1DNYzitq.
+Downloading joining block PdcAM-hMf0psunAQF8Wf4OMbOI_ko639Ee0lWVYHaCzpCG7CRaauuu5lyNc_YNds.
+Downloading joining block CgBgd8PCRcd2xd2lOVlpyas28IMgl_K21afgbGkdy3j2aXXDKcl56y8FwQe0x9NI.
+Downloading joining block KgOe437PlIY4URffEbhQjlhh_sNRZioz0Mgxk_Zvg5g0cSAl0pp9CK28p8O_u5O6.
+Downloading joining block VUOvavifrdAc1Aw941OfpimxxXak7rFcZ19dvYm8-sIXa576d6Wj0TsBXWei1VuA.
+Downloading joining block JKOTJ7DJXBfjS1rR_pzYJ0OwGuo2xMy1rlG21mXeB7nqZNXUh6IsbifeQNoV9Rub.
+Downloading joining block FIOsNLEATnJWjwnJjC3U1gk7NHqJUM76WWD_VxCXjxvZbm8eqYRJe9OJUV6N-2ej.
+Downloaded the block trail successfully.
+Joined the Arweave network successfully.
+[Stage 1/3] Starting to hash
+Skipping hashrate report, the round lasted less than 10 seconds.
+[Stage 1/3] Starting to hash
+Miner spora rate: 42 h/s, recall bytes computed/s: 766, MiB/s read: 0, the round lasted 63 seconds.
+[Stage 1/3] Starting to hash
+[Stage 1/3] Starting to hash
+[Stage 1/3] Starting to hash
+Skipping hashrate report, the round lasted less than 10 seconds.
+[Stage 1/3] Starting to hash
+Miner spora rate: 31 h/s, recall bytes computed/s: 579, MiB/s read: 0, the round lasted 15 seconds.
+[Stage 1/3] Starting to hash
+Arweave Heartbeat: Server terminated safely.
