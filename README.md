@@ -1,20 +1,32 @@
 # arPanel
-Arweave miner dashboard for virdpool's miner.  
+arPanel is a mobile friendly web dashboard for Arweave pool mining using virdpool's miner.  
 You can use this dashboard to control and monitor your miner's status and performance.
 
 # Installation
 Follow these simple steps below.
 
 ### Requirements
-arPanel is not a standalone miner, it requires Vird's miner which is available here: [Virdpool Miner](https://github.com/virdpool/miner)  
-Follow the instructions to install the [miner](https://github.com/virdpool/miner) first. Then follow the instructions below to setup arPanel.
+arPanel is not a standalone miner, it is a dashboard for Vird's miner which is available here: [Virdpool Miner](https://github.com/virdpool/miner)  
+Follow the instructions to install the [miner](https://github.com/virdpool/miner) first. Then, follow the instructions below to setup arPanel.  
+arPanel has been tested on Ubuntu 18.04 and Ubuntu 20.x
 
 ### Setup
-IMPORTANT: Clone the repository inside your miner's directory.  
-So, first move to the directory where the miner is installed and do:  
+IMPORTANT: Clone the arPanel repository inside your miner's directory.  
+1) Move to the directory where the miner is installed and do:  
 ```
-code here
+git clone https://github.com/wxt30/arpanel.git
+cd arpanel
 ```
+2) Edit `mine.sh` using your favorite editor to set your WALLET where pool rewards will be sent. If you don't have one, get your own [Arweave Web Extension Wallet](https://docs.arweave.org/info/wallets/arweave-web-extension-wallet).
+
+3) Optionally you can set your arweave data directory using the `data_dir` option. You need this if you have previously synced. And finally, do some performance tuning for better mining hashrate speeds. See the notes in `mine.sh` for tuning details.
+
+### Running arPanel
+Start arPanel with: `./arpanel-start.sh`  
+Open a web browser to see your dashboard on your rig: `http://localhost:3030`  
+or  
+You can open/forward port `3030` and use your public ip: `http://your-public-ip:3030`
+
 
 # License
 Copyright (c) 2021 arpanel
