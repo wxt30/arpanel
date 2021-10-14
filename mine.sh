@@ -47,8 +47,7 @@ INTERNAL_API_SECRET=`cat ./internal_api_secret`
 # NOTE: Peers closer to your Arweave node may speed up the sync process.
 #       You can pick peers from here https://explorer.ar.virdpool.com/#/peer_list
 #
-#PEERS=peer 188.166.200.45 peer 188.166.192.169 peer 163.47.11.64 peer 139.59.51.59 peer 138.197.232.192
-PEERS="peer 65.21.33.240:1984 peer 39.173.177.122:1984 peer 117.148.168.232:1984 peer 157.90.92.225:1984 peer 157.90.92.240:1984 peer 161.97.87.18:1984 peer 157.90.92.241:1984 peer 157.90.92.234:1984 peer 135.181.142.202:1984 peer 157.90.92.244:1984 peer 157.90.92.227:1984 peer 157.90.92.245:1984 peer 157.90.92.230:1984 peer 157.90.90.245:1984 peer 157.90.92.232:1984 peer 157.90.92.228:1984 peer 157.90.93.177:1984"
+PEERS="peer 188.166.200.45 peer 188.166.192.169 peer 163.47.11.64 peer 139.59.51.59 peer 138.197.232.192"
 
 # Start the Arweave node in mining mode.
 # Log file: logs/arweave.log
@@ -58,9 +57,6 @@ PEERS="peer 65.21.33.240:1984 peer 39.173.177.122:1984 peer 117.148.168.232:1984
 nohup ../arweave/_build/prod/rel/arweave/bin/start port $PORT pool_mine \
   internal_api_secret $INTERNAL_API_SECRET \
   $PEERS \
-  data_dir /home/service/arweave-data \
-  enable randomx_jit enable randomx_large_pages enable randomx_hardware_aes \
-  stage_one_hashing_threads 7 stage_two_hashing_threads 2 io_threads 4 randomx_bulk_hashing_iterations 20 \
   > logs/arweave.log &
 
 echo "wait for startup..."
@@ -96,7 +92,7 @@ screen -dmS virdpool_proxy ./proxy_log.sh ./proxy.coffee --wallet $WALLET \
 #   internal_api_secret $INTERNAL_API_SECRET \
 #   data_dir /mnt/nvme1 \
 #   $PEERS \
-
+#   > logs/arweave.log &
 
 # PERFORMANCE TUNING
 
@@ -115,6 +111,7 @@ screen -dmS virdpool_proxy ./proxy_log.sh ./proxy.coffee --wallet $WALLET \
 #   internal_api_secret $INTERNAL_API_SECRET \
 #   $PEERS \
 #   enable randomx_jit enable randomx_large_pages enable randomx_hardware_aes \
+#   > logs/arweave.log &
 
 
 # THREAD TUNING
@@ -162,6 +159,7 @@ screen -dmS virdpool_proxy ./proxy_log.sh ./proxy.coffee --wallet $WALLET \
 #   internal_api_secret $INTERNAL_API_SECRET \
 #   $PEERS \
 #   enable search_in_rocksdb_when_mining \
+#   > logs/arweave.log &
 
 # There is some boost recipe from xmrig applicable to arweave mining
 # https://xmrig.com/docs/miner/randomx-optimization-guide/msr
