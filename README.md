@@ -1,5 +1,20 @@
-# arpanel
-Arweave miner dashboard for virdpool's miner.
+# arPanel
+Arweave miner dashboard for virdpool's miner.  
+You can use this dashboard to control and monitor your miner's status and performance.
+
+# Installation
+Follow these simple steps below.
+
+### Requirements
+arPanel is not a standalone miner, it requires Vird's miner which is available here: [Virdpool Miner](https://github.com/virdpool/miner)  
+Follow the instructions to install the [miner](https://github.com/virdpool/miner) first. Then follow the instructions below to setup arPanel.
+
+### Setup
+IMPORTANT: Clone the repository inside your miner's directory.  
+So, first move to the directory where the miner is installed and do:  
+```
+code here
+```
 
 # License
 Copyright (c) 2021 arpanel
