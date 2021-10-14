@@ -21,17 +21,18 @@ cd arpanel
 3) Optionally you can set your arweave data directory using the `data_dir` option. You need this if you have previously synced. And finally, do some performance tuning for better mining hashrate speeds. See the notes in `mine.sh` for tuning details.
 
 ### Start & Stop arPanel
-Start arPanel with: `./arpanel-start.sh`  
+Start arPanel with: `./arpanel-start.sh` or `sudo ./arpanel-start.sh` if you see startup errors in `arpanel/logs/arweave.log`  
 
 Open a web browser to see your dashboard: `http://your-rigs-ip:3030`  
 You can also open/forward port `3030` and use your public ip: `http://your-public-ip:3030`  
 You can change the port number in `./arpanel-start.sh`  
 
-Stop arPanel with: `./arpanel-stop.sh`
+Stop arPanel with: `./arpanel-stop.sh` or `sudo ./arpanel-stop.sh`
 
 ### Update arPanel
 NOTE: Backup `mine.sh` first so you don't lose your miner settings.  
 
+Stop your miner using arPanel.
 Move to the arPanel installation directory and do:
 ```
 ./arpanel-stop.sh
@@ -44,6 +45,17 @@ Start arPanel.
 ```
 ./arpanel-start.sh
 ```
+Start your miner using arPanel.
+
+### FAQ
+Q: Is arPanel free to use?  
+A: Yes, it is totally free.  
+
+Q: Is arPanel an Arweave miner?  
+A: No, arPanel is a dashboard for vird's pool miner, it is not a miner.  
+
+Q: Why are there ads in arPanel?  
+A: arPanel is free to use therefore ads helps us with development and support.
 
 # License
 Copyright (c) 2021 arPanel
