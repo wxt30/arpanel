@@ -9,7 +9,7 @@
 # Stop any existing Arweave instances
 #
 ./stop.sh
-#ulimit -n 1000000
+ulimit -n 1000000
 
 # Set your PEERS and data_dir as needed.
 # Peers closer to your Arweave node may speed up the sync process.
