@@ -27,18 +27,18 @@ cd arpanel
 3) Optionally you can set your arweave data directory using the `data_dir` option. You need this if you have previously synced. And finally, do some performance tuning for better mining hashrate speeds. See the notes in `mine.sh` for tuning details.
 
 ### Start & Stop arPanel
-Start arPanel with: `./arpanel-start.sh`  
+Start arPanel with `./arpanel-start.sh` found in the `arpanel` directory.  
 
 Open a web browser to see your dashboard: `http://your-rigs-ip:3030`  
 You can also open/forward port `3030` and use your public ip: `http://your-public-ip:3030`  
 If needed, the port number can be changed in `./arpanel-start.sh`  
 
-Stop arPanel with: `./arpanel-stop.sh`
+Stop arPanel with `./arpanel-stop.sh` found in the `arpanel` directory.
 
 ### Update arPanel
 NOTE: Backup `mine.sh` first so you don't lose your miner settings.  
 
-Stop your miner using arPanel.
+Stop your Virdpool miner using arPanel.
 Move to the arPanel installation directory and do:
 ```
 ./arpanel-stop.sh
