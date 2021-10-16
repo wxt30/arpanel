@@ -35,10 +35,19 @@ If needed, the port number can be changed in `./arpanel-start.sh`
 
 Stop arPanel with `./arpanel-stop.sh` found in the `arpanel` directory.
 
+### Using arPanel
+From the 'Miner Control' menu you have the option to 'Start Mining', 'Sync Only' or 'Stop' the Virdpool miner. If you are getting started now, it is advised to initially 'Sync Only' until you have a significant Arweave data set.  Then you can switch to mining.  
+
+You should keep an eye on the logs for miner errors. Log files are saved in the `arpanel/logs` directory.  
+
+**Arweave Node Log**: `arpanel/logs/arweave.log`  
+**Miner Proxy Log**: `arpanel/logs/proxy.log`  
+**arPanel Log**: `arpanel/logs/arpanel.log`  
+
 ### Update arPanel
 NOTE: Backup `mine.sh` first so you don't lose your miner settings.  
 
-Stop your Virdpool miner using arPanel.
+Stop your Virdpool miner using arPanel. From the side menu click 'Miner Control' > 'Stop'.
 Move to the arPanel installation directory and do:
 ```
 ./arpanel-stop.sh
@@ -51,7 +60,7 @@ Start arPanel.
 ```
 ./arpanel-start.sh
 ```
-Start your miner using arPanel.
+Start your Virdpool miner using arPanel. From the side menu click 'Miner Control' and select to either 'Sync Only' or 'Start Mining'.
 
 ### FAQ
 Q: Is arPanel free to use?  
