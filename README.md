@@ -17,7 +17,7 @@ IMPORTANT: Open a terminal, elevate priveleges and clone the arPanel repository 
 sudo su
 # cd miner
 ```
-1) Ensure you have moved to the directory where Virdpool miner is installed and do:  
+1) Ensure you are in the directory where Virdpool miner is installed and do:  
 ```
 git clone https://github.com/wxt30/arpanel.git
 cd arpanel
