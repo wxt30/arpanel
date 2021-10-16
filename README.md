@@ -29,7 +29,7 @@ Start arPanel with: `./arpanel-start.sh`
 
 Open a web browser to see your dashboard: `http://your-rigs-ip:3030`  
 You can also open/forward port `3030` and use your public ip: `http://your-public-ip:3030`  
-You can change the port number in `./arpanel-start.sh`  
+If needed, the port number can be changed in `./arpanel-start.sh`  
 
 Stop arPanel with: `./arpanel-stop.sh`
 
