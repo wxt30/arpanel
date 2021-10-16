@@ -12,7 +12,7 @@ Follow the instructions to install the [miner](https://github.com/virdpool/miner
 arPanel has been tested and runs on Ubuntu 18.04 and Ubuntu 20.04.
 
 ### Setup
-IMPORTANT: Open a terminal, elevate priveleges and clone the arPanel repository inside the Virdpool miner directory.
+**IMPORTANT**: Open a terminal, elevate priveleges and clone the arPanel repository inside the Virdpool miner directory.
 ```
 sudo su
 # cd miner
@@ -27,6 +27,8 @@ cd arpanel
 3) Optionally you can set your arweave data directory using the `data_dir` option. You need this if you have previously synced. And finally, do some performance tuning for better mining hashrate speeds. See the notes in `mine.sh` for tuning details.
 
 ### Start & Stop arPanel
+**NOTE**: You must stop Virdpool miner before using arPanel.  
+
 Start arPanel with `./arpanel-start.sh` found in the `arpanel` directory.  
 
 Open a web browser to see your dashboard: `http://your-rigs-ip:3030`  
@@ -45,7 +47,7 @@ You should keep an eye on the logs for miner errors. Log files are saved in the 
 **arPanel Log**: `arpanel/logs/arpanel.log`  
 
 ### Update arPanel
-NOTE: Backup `mine.sh` first so you don't lose your miner settings.  
+**NOTE**: Backup `mine.sh` first so you don't lose your miner settings.  
 
 Stop your Virdpool miner using arPanel. From the side menu click '*Miner Control*' > '*Stop*'.  
 Then using a terminal, move to the arPanel installation directory and do:
