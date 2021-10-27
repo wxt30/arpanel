@@ -26,8 +26,8 @@ if !argv.wallet or !api_secret
 argv.worker ?= "default_worker"
 
 puts "Your mining wallet: #{colors.green argv.wallet}"
-puts "For hashrate look at arweave console (this is temporary solution)"
-puts "   screen -R virdpool_arweave_miner"
+#puts "For hashrate look at arweave console (this is temporary solution)"
+#puts "   screen -R virdpool_arweave_miner"
 puts ""
 
 # ###################################################################################################
