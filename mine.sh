@@ -44,6 +44,8 @@ fi
 
 INTERNAL_API_SECRET=`cat ./internal_api_secret`
 
+ulimit -n 1000000
+
 # NOTE: Peers closer to your Arweave node may speed up the sync process.
 #       You can pick peers from here https://explorer.ar.virdpool.com/#/peer_list
 #

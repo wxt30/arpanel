@@ -1,17 +1,23 @@
 # arPanel
 arPanel is a mobile friendly web dashboard for Arweave pool mining using Virdpool miner.  
-Use this dashboard to control and monitor your miner's status and performance.
+Use this dashboard to control and monitor your miner's status and performance.  
+
+![arPanel Miner Dashboard](https://github.com/wxt30/arpanel/blob/master/public/images/arpanel-demo.jpg)
 
 # Installation
 
 ### Requirements
 arPanel is **not** a standalone miner, it is simply a dashboard for Virdpool miner which is available here: [Virdpool Miner](https://github.com/virdpool/miner)  
 Follow the instructions to install the [miner](https://github.com/virdpool/miner) first. Then, follow the instructions below to setup arPanel.  
-arPanel has been tested on Ubuntu 18.04 and Ubuntu 20.04.
+arPanel has been tested and runs on Ubuntu 18.04 and Ubuntu 20.04.
 
 ### Setup
-IMPORTANT: Clone the arPanel repository inside your miner's directory.  
-1) Move to the directory where virdpool miner is installed and do:  
+**IMPORTANT**: Open a terminal, elevate priveleges and clone the arPanel repository inside the Virdpool miner directory.
+```
+sudo su
+# cd miner
+```
+1) Ensure you are in the directory where Virdpool miner is installed and do:  
 ```
 git clone https://github.com/wxt30/arpanel.git
 cd arpanel
@@ -21,19 +27,30 @@ cd arpanel
 3) Optionally you can set your arweave data directory using the `data_dir` option. You need this if you have previously synced. And finally, do some performance tuning for better mining hashrate speeds. See the notes in `mine.sh` for tuning details.
 
 ### Start & Stop arPanel
-Start arPanel with: `./arpanel-start.sh` or `sudo ./arpanel-start.sh` if you see startup errors in `arpanel/logs/arweave.log`  
+**NOTE**: You must stop Virdpool miner before using arPanel.  
+
+Start arPanel with `./arpanel-start.sh` found in the `arpanel` directory.  
 
 Open a web browser to see your dashboard: `http://your-rigs-ip:3030`  
 You can also open/forward port `3030` and use your public ip: `http://your-public-ip:3030`  
-You can change the port number in `./arpanel-start.sh`  
+If needed, the port number can be changed in `./arpanel-start.sh`  
 
-Stop arPanel with: `./arpanel-stop.sh` or `sudo ./arpanel-stop.sh`
+Stop arPanel with `./arpanel-stop.sh` found in the `arpanel` directory.
+
+### Using arPanel
+From the '*Miner Control*' menu you have the option to '*Start Mining*', '*Sync Only*' or '*Stop*' the Virdpool miner. If you are getting started now, it is advised to initially '*Sync Only*' until you have a significant Arweave data set.  Then you can switch to mining.  
+
+You should keep an eye on the logs for miner errors. Log files are saved in the `arpanel/logs` directory.  
+
+**Arweave Node Log**: `arpanel/logs/arweave.log`  
+**Miner Proxy Log**: `arpanel/logs/proxy.log`  
+**arPanel Log**: `arpanel/logs/arpanel.log`  
 
 ### Update arPanel
-NOTE: Backup `mine.sh` first so you don't lose your miner settings.  
+**NOTE**: Backup `mine.sh` first so you don't lose your miner settings.  
 
-Stop your miner using arPanel.
-Move to the arPanel installation directory and do:
+Stop your Virdpool miner using arPanel. From the side menu click '*Miner Control*' > '*Stop*'.  
+Then using a terminal, move to the arPanel installation directory and do:
 ```
 ./arpanel-stop.sh
 git pull
@@ -45,33 +62,14 @@ Start arPanel.
 ```
 ./arpanel-start.sh
 ```
-Start your miner using arPanel.
-
-### Troubleshooting
-##### nvm and ownership fix [(source)](https://github.com/virdpool/miner#nvm-and-ownership-fix)
-The Virdpool miner installation script may cause some ownership issues with `nvm`. Here is a fix.  
-Move to the Virdpool miner installation directory and do:
-```
-# change 'user' to your own username
-sudo chown -R user .
-
-# install nvm under the current user because nvm under root will not work
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-source ~/.bashrc
-source ~/.nvm/nvm.sh
-nvm i 14
-nvm alias default 14
-npm i -g iced-coffee-script
-rm -rf node_modules
-npm ci
-```
+Start your Virdpool miner using arPanel. Open arPanel in a browser and from the side menu click '*Miner Control*' and select either '*Sync Only*' or '*Start Mining*'.
 
 ### FAQ
 Q: Is arPanel free to use?  
 A: Yes, it is totally free.  
 
 Q: Is arPanel an Arweave miner?  
-A: No, arPanel is a dashboard for vird's pool miner, it is not a miner.  
+A: No, arPanel is a dashboard for Virdpool miner, it is not a miner.  
 
 Q: Why are there ads in arPanel?  
 A: arPanel is free to use therefore ads helps us with development and support.
